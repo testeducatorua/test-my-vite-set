@@ -15,6 +15,11 @@ export default defineConfig(() => ({
     cssCodeSplit: false,
     assetsDir: 'assets',
     rollupOptions: {
+      input: {
+    main: 'index.html',
+    vasya: 'vasya.html',
+    // test: 'test.html', ...
+  },
       output: {
         entryFileNames: 'assets/js/[name]-[hash].js',
         chunkFileNames: 'assets/js/[name]-[hash].js',
